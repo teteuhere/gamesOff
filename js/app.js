@@ -4,5 +4,16 @@ function alterarStatus(id) {
     let bot = click.querySelector(`.dashboard__item__button`);
     let nome = click.querySelector(`.dashboard__item__name`);
     
-    alert("Você reservou " + nome.textContent);
+    
+    if(blur.classList.contains('dashboard__item__img--rented')){
+        blur.classList.remove('dashboard__item__img--rented');
+        bot.textContent = 'Alugar';
+        bot.classList.remove('dashboard__item__button--return');
+        alert("Você reservou " + nome.textContent);
+    } else {
+        blur.classList.add('dashboard__item__img--rented');
+        bot.textContent = 'Devolver';
+        bot.classList.add('dashboard__item__button--return');
+        alert("Você devolveu " + nome.textContent);
+    }
 }
