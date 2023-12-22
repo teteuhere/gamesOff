@@ -17,3 +17,4 @@ function alterarStatus(id) {
         alert("Você devolveu " + nome.textContent);
     }
 }
+

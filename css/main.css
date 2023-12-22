@@ -68,18 +68,31 @@
     width: 100%;
 }
 
+#slider{
+    display: flex;
+    overflow-x:hidden;
+}
+
+.dashboard__items__item{
+    display: flex;
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+}
+
+
 .dashboard__items {
     display: flex;
     justify-content: space-between;
 }
 
 .dashboard__items__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    font-family: 'Inter', sans-serif;
+    
 }
 
 .dashboard__item__img {
